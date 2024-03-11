@@ -10,4 +10,5 @@ The followig are the directories with the files within and what the objective of
   4. ### 3-print_number.py:
      In this task we are using format specifier concept that specifies how values are formatted when they are inserted into a string. In this case
      we are using %d format specifier to ensure the value is represented as a decimal integer.
-  5.
+  5. ### 4-print_float.py:
+     In this task we are supposed to use format specier to specify the number of digit that a float should have
