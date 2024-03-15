@@ -22,7 +22,7 @@ if __name__ == "__main__":
     elif arg_op == mul_op:
         print(f'{num1} * {num2} = {num1*num2}')
     elif arg_op == div_op:
-        print(f'{num1} / {num2} = {float(num1/num2)}')
+        print(f'{num1} / {num2} = {num1/num2}')
     else:
         print('Unknown operator. Available operators: +, -, * and /')
         sys.exit(1)
