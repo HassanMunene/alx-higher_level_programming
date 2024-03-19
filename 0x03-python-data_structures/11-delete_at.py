@@ -10,4 +10,5 @@ def delete_at(my_list=[], idx=0):
         my_list.remove(element)
     return my_list
 
+
 delete_at()
