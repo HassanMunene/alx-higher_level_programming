@@ -1,7 +1,4 @@
 #!/user/bin/python3
-"""
-convert a roman num to int
-"""
 
 
 def roman_to_int(roman_string):
