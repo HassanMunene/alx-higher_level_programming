@@ -31,3 +31,15 @@ print(int(n))
 
 The time complexity of this problem is O(log10n) this means that it reduces the size of the problem by a constant factor in each step
 The auxilliary space complexity is O(1) this means that the algorithm use a constant amount of extra space regardless of the input size means the algorithm does not require an additional memory in proportional to the input size
+
+# ord()
+This method converts a character to its equivalent unicode number
+e.g ord('a') == 97
+
+# chr()
+Convert back to the character
+chr(97) == 'a'
+
+# hex()
+convert a decimal to its hexadecimal equivalent
+hex(1) == 0x1
