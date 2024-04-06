@@ -13,5 +13,3 @@ def uppercase(str):
             new_l += l
     print("{}".format(new_l), end='')
     print()
-
-uppercase("Best School 98 Battery street")
