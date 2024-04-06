@@ -43,3 +43,11 @@ chr(97) == 'a'
 # hex()
 convert a decimal to its hexadecimal equivalent
 hex(1) == 0x1
+
+# WRITE A PROGRAM THAT PRINTS ALL DIFFERENT COMBINATIONS OF TWO DIGITS
+So if you have 01 and 10 you will only print 01 
+if you have 19 and 91 you will only print 19
+if you have 29 and 92 you will only print 29
+do you see the pattern here? if we want to achieve this objective we have to ensure that the smaller digit always appears first
+when printing two digits number. If we work on this restriction then there is not way 10 or 91 or 92 and others will be printed
+because the bigger digit appears first!!
