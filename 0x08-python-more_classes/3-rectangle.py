@@ -64,7 +64,7 @@ class Rectangle:
         '''return a string rep of the rectangle in form of #'''
         if self.__width == 0 or self.__height == 0:
             return ""
-        return "\n".join(["#" * self._width for _ in range(self._height)])
+        return "\n".join(["#" * self.__width for _ in range(self.__height)])
 
     def __repl__(self):
         '''return a developer friendly rep of the rec object'''
