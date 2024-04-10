@@ -71,8 +71,8 @@ class Square:
     def __str__(self):
         '''return string rep of the object'''
         if self.__size != 0:
-            for i in range(0, self.__position[0]):
-                print("", end="")
+            for i in range(0, self.__position[1]):
+                print("")
         for length in range(0, self.__size):
             for j in range(0, self.__position[0]):
                 print(" ", end="")
