@@ -56,6 +56,7 @@ class Square:
     def __lt__(self, other):
         '''return true if c.ins < other'''
         return self.size < other.size
+
     def __le__(self, other):
         '''return true if c.ins <= other.size'''
         return self.size <= other.size
