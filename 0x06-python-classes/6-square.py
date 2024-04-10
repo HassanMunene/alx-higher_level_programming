@@ -59,10 +59,11 @@ class Square:
             print()
             return
 
-        for i in range(self.__position[0]):
-            print("", end='')
+        for i in range(0, self.__position[1]):
+            print("")
 
-        for length in range(self.__size):
+        for length in range(0, self.__size):
+            [print(" ", end="") for j in range(0, self.__position[0])]
             for width in range(self.__size):
                 print('#', end='')
             print()
