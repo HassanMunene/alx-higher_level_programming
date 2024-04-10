@@ -54,7 +54,7 @@ class SinglyLinkedList:
     def __str__(self):
         '''print the singly linked list'''
         if self.__head is None:
-            return "Empty list"
+            return ""
 
         result = ""
         current = self.__head
