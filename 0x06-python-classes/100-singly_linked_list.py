@@ -29,7 +29,7 @@ class Node:
     def next_node(self, value):
         '''assign a value to next node'''
         if value is not None and isinstance(value, Node) is False:
-            raise TypeError('next_node must be a node object')
+            raise TypeError('next_node must be a Node object')
         else:
             self.__next_node = value
 
