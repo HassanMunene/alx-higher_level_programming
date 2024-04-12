@@ -1,0 +1,40 @@
+first import the module
+>>> add_integer = __import__("0-add_integer").add_integer
+
+first test that adding two integers indeed is correct
+>>> add_integer(3, 4)
+7
+
+second test that when we and floats they return an int
+>>> add_integer(3.0, 4.0)
+7
+
+test that adding negative and positive number
+>>> add_integer(-3, 4)
+1
+
+test all numbers have -ve
+>>> add_integer(-3, -4)
+-7
+
+test when only one argument is provided
+>>> add_integer(3)
+101
+
+test when more that two argument are provided provide a traceback error
+>>> add_integer(1, 2, 3)
+Traceback (most recent call last):
+...
+TypeError: add_integer() takes from 1 to 2 positional arguments but 3 were given
+
+test when less than no args are provided
+>>> add_integer()
+Traceback (most recent call last):
+...
+TypeError: add_integer() missing 1 required positional argument: 'a'
+
+check non number with number
+>>> add_integer('rs', 4)
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
