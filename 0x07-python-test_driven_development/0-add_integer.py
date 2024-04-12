@@ -5,6 +5,7 @@ Prototype: def add_integer(a, b=98):
 Returns an integer: the addition of a and b
 """
 
+
 def add_integer(a, b=98):
     """
     Returns an integer: the addition of a and b
