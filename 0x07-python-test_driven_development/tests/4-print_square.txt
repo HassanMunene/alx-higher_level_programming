@@ -1,0 +1,75 @@
+Import the function from the module:
+>>> print_square = __import__("4-print_square").print_square
+
+1) test that module is documentend
+>>> doc = __import__("4-print_square").__doc__
+>>> len(doc) > 1
+True
+
+2) test the function is also documented
+>>> func = __import__("4-print_square").print_square.__doc__
+>>> len(func) > 1
+True
+
+3) test when args provided to function
+>>> print_square()
+Traceback (most recent call last):
+...
+TypeError: print_square() missing 1 required positional argument: 'size'
+
+
+4) check when too many argument are provided
+>>> print_square(1, 2, 3)
+Traceback (most recent call last):
+...
+TypeError: print_square() takes 1 positional argument but 3 were given
+
+4) test passing a positive integer
+>>> print_square(4)
+####
+####
+####
+####
+>>> print_square(10)
+##########
+##########
+#########
+##########
+##########
+##########
+>>> print_square(0)
+>>> print_square(1)
+#
+
+5) test when passing negative integer
+>>> print_square(-1)
+Traceback (most recent call last):
+...
+ValueError: size must be >= 0
+
+5) passing a none integer
+>>> print_square((1,))
+Traceback (most recent call last):
+...
+TypeError: size must be an integer
+
+>>> print_square("3")
+Traceback (most recent call last):
+...
+TypeError: size must be an integer
+
+>>> print_square(True)
+Traceback (most recent call last):
+...
+TypeError: size must be an integer
+
+6) test when passing floats and negative floats
+>>> print_square(1.0)
+Traceback (most recent call last):
+...
+TypeError: size must be an integer
+
+>>> print_square(-5.5)
+Traceback (most recent call last):
+...
+TypeError: size must be an integer
