@@ -1,0 +1,22 @@
+first import the module
+>>> say_my_name = __import__("3-say_my_name").say_my_name
+
+1) test printing both name
+>>> say_my_name("Hassan", "Munene")
+My name is Hassan Munene
+
+2) test printing one name if only one provided
+>>> say_my_name("Hassan")
+My name is Hassan
+
+3) provide first name with none string
+>>> say_my_name(12, "Munene")
+Traceback (most recent call last):
+...
+TypeError: first_name must be a string
+
+4) provide last name with none string
+>>> say_my_name("Hassan", 12)
+Traceback (most recent call last):
+...
+TypeError: last_name must be a string
