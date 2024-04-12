@@ -3,6 +3,8 @@
 contains a function that prints the
 full names of an individual
 """
+
+
 def say_my_name(first_name, last_name=""):
     """
     print the names
