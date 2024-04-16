@@ -18,11 +18,4 @@ class MyList(list):
         sort a list in ascending
         using a bubble sort
         """
-        leng = len(self)
-        for i in range(leng):
-            for j in range(leng - 1):
-                if self[j] > self[j + 1]:
-                    temp = self[j]
-                    self[j] = self[j+1]
-                    self[j+1] = temp
-        print(self)
+        print(sorted(self))
