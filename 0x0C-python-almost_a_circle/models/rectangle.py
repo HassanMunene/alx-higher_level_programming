@@ -116,7 +116,7 @@ class Rectangle(Base):
                 print("#", end='')
             print()
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """
         update the specified attribute
         1st is id, 2nd is width, 3rd is height,
@@ -128,6 +128,10 @@ class Rectangle(Base):
             if index > len(attributes):
                 return
             self.__setattr__(attributes[index], val)
+            if args:
+                return
+        for key, val in kwargs.items():
+            self.__setattr__(key, val)
 
     def __str__(self):
         """
