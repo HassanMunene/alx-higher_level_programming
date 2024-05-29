@@ -99,3 +99,12 @@ class Rectangle(Base):
         """
         ar = self.width * self.height
         return ar
+
+    def display(self):
+        """
+        display a rectangle using # symbol
+        """
+        for i in range(self.height):
+            for j in range(self.width):
+                print("#", end='')
+            print()
