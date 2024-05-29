@@ -104,7 +104,14 @@ class Rectangle(Base):
         """
         display a rectangle using # symbol
         """
+        if self.width == 0 or self.height == 0:
+            print("")
+            return
+        for y in range(self.y):
+            print("")
         for i in range(self.height):
+            for x in range(self.x):
+                print(" ", end='')
             for j in range(self.width):
                 print("#", end='')
             print()
