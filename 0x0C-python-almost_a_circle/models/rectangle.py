@@ -116,6 +116,19 @@ class Rectangle(Base):
                 print("#", end='')
             print()
 
+    def update(self, *args):
+        """
+        update the specified attribute
+        1st is id, 2nd is width, 3rd is height,
+        4th is x and 5th is y
+        """
+        attributes = ['id', 'width', 'height', 'x', 'y']
+
+        for index, val in enumerate(args):
+            if index > len(attributes):
+                return
+            self.__setattr__(attributes[index], val)
+
     def __str__(self):
         """
         readable string representation of
