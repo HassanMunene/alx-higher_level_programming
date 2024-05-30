@@ -74,7 +74,7 @@ class Base:
         try:
             with open(filname) as f:
                 content = f.read()
-        except:
+        except Exception as e:
             return new
         json_file = Base.from_json_string(content)
         for obj in json_file:
