@@ -22,5 +22,7 @@ class Base:
         """
         return the json representation of dictionaries
         """
+        if list_dictionaries is None:
+            return "[]"
         json_rep = json.dumps(list_dictionaries)
         return json_rep
