@@ -1,13 +1,15 @@
 #!/usr/bin/python3
 import json
 """
-contain the base class
+This is the base class from where everything
+will be inherited from
 """
 
 
 class Base:
     """
-    the class Base
+    the class Base itself with
+    its initialization
     """
     __nb_objects = 0
 
