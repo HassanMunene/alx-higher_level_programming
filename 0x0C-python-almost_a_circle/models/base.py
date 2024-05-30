@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-import json
 """
 This is the base class from where everything
 will be inherited from
 """
+import json
 
 
 class Base:
