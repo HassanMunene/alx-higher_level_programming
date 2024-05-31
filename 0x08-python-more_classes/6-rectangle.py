@@ -6,8 +6,8 @@ This module that computes Area and perimeter
 
 class Rectangle:
     """Represent a rectangle as a class"""
-
     number_of_instances = 0
+
     def __init__(self, width=0, height=0):
         self.width = width
         self.height = height
