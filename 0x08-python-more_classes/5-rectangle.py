@@ -83,4 +83,4 @@ class Rectangle:
         the method that is called when an instance is
         garbage collected or deleted
         """
-        print("Bye Rectangle...")
+        print("Bye rectangle...")
