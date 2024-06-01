@@ -27,7 +27,8 @@ def matrix_mul(m_a, m_b):
             raise TypeError("each row of m_a must be of the same size")
         num_colum1 = len(row1)
         for column1 in row1:
-            if isinstance(column1, int) is False and isinstance(column1, float) is False:
+            if isinstance(column1, int) is False and \
+                    isinstance(column1, float) is False:
                 raise TypeError("m_a should contain only integers or floats")
 
     if m_b == []:
@@ -42,7 +43,8 @@ def matrix_mul(m_a, m_b):
             raise TypeError("each row of m_b must be of the same size")
         num_row2 += 1
         for column2 in row2:
-            if isinstance(column2, int) is False and isinstance(column2, float) is False:
+            if isinstance(column2, int) is False and \
+                    isinstance(column2, float) is False:
                 raise TypeError("m_b should contain only integers or floats")
 
     if num_colum1 != num_row2:
@@ -51,16 +53,16 @@ def matrix_mul(m_a, m_b):
     mul_matrix = []
 
     for row_1 in m_a:
-        l = 0
-        l_row = []
-        while l < len(m_b[0]):
+        p = 0
+        p_row = []
+        while p < len(m_b[0]):
             result = 0
             k = 0
             for column_1 in row_1:
-                result += column_1 * m_b[k][l]
+                result += column_1 * m_b[k][p]
                 k += 1
-            l_row.append(result)
-            l += 1
-        mul_matrix.append(l_row)
+            p_row.append(result)
+            p += 1
+        mul_matrix.append(p_row)
 
     return mul_matrix
