@@ -10,7 +10,7 @@ def text_indentation(text):
     splits text to lines along "?", ":", "." followed by 2 new lines
     """
     if isinstance(text, str) is False:
-        raise TypeError("text must be string")
+        raise TypeError("text must be a string")
     flag = 0
     for a in text:
         if flag == 0:
