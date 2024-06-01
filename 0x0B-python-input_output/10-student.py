@@ -17,7 +17,7 @@ class Student:
         """
         Get dictionary rep of the Student based on the attrs provided
         """
-        if (type(attrs) == list and
-                all(type(attr) == str for attr in attrs)):
+        if isinstance(attrs, list) is True and \
+                all(type(attr) is str for attr in attrs)):
             return {k: getattr(self, k) for k in attrs if hasattr(self, k)}
         return self.__dict__
