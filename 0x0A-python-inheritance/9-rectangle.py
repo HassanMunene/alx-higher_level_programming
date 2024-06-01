@@ -29,6 +29,6 @@ class Rectangle(BaseGeometry):
         returns the print and str rep
         """
 
-        string = "[" + str(self.__class__.__name__) + "]"
+        string = "[" + str(self.__class__.__name__) + "] "
         string += str(self.__width) + "/" + str(self.__height)
         return string
