@@ -6,6 +6,7 @@ from relationship_state import Base
 from sqlalchemy import Column, Integer, String, ForeignKey, MetaData
 from sqlalchemy.ext.declarative import declarative_base
 
+
 class City(Base):
     """
     Class which defines each and every city
